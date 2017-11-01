@@ -19,14 +19,44 @@ body {
 
 header {
   background-color: #9c81c4;
-  padding: 1.2em 0.5em;
+  padding: 1em 0.2em;
   margin: 0px;
   display: none;
   /*Font Information*/
-  font-size: 6em;
+  font-size: 4em;
   text-align: center;
+  word-spacing: -15px;
+  color: #383838;
 }
 
 header section#sub-title {
   font-size: 0.5em;
+  word-spacing: normal;
+}
+
+/*Navigation Bar Scripts*/
+nav#main-nav-bar {
+  display: none;
+  border-style: none;
+  background-color: #8569ad;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*.active deals with the navbar item that the browser is currently on
+(Bootstrap)*/
+.navbar-default .navbar-nav > .active {
+  background-color: #9d7ccc;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+      background: #c9b2ea;
+ }
+
+nav#main-nav-bar a {
+  font-weight: bold;
+  color: #383838;
 }
