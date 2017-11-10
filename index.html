@@ -1,19 +1,28 @@
+<!--TODO:
+  Consider utilizing PHP in order to repeat HTML code such as that
+  for the header and footer of your website.
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Josiah Emmanuel Navarro</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="index.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css" />
   <script src="index.js"></script>
 </head>
 <body>
+  <!--TODO: Consider placing the div inside of the header element instead
+  of the other way around?-->
   <div class="container-fluid" style="padding: 0;">
     <div class="row">
       <div class="col-sm-12">
+        <!--The header as well as the navigation bar are animated by
+        JQuery in the JavaScript document index.js.-->
         <header>
           JOSIAH <b>EMMANUEL</b> NAVARRO
           <section id="sub-title"><b>Software Engineer</b> |
@@ -23,6 +32,7 @@
       </div>
     </div>
   </div>
+  <!--Navigation Bar-->
   <nav id="main-nav-bar" class="navbar navbar-default">
     <div class="container-fluid">
       <ul class="nav navbar-nav">
@@ -39,6 +49,12 @@
 
       </div>
     </div>
+  </div>
+  <!--Footer-->
+  <div class="container-fluid">
+    <footer>
+      &#169; 2017 Josiah Emmanuel Navarro
+    </footer>
   </div>
 </body>
 </html>

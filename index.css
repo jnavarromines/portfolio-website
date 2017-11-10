@@ -10,13 +10,14 @@
   font-weight: bold;
 }
 
-/*index.html Scripts*/
+/*INDEX.HTML SCRIPTS*/
 body {
   font-family: open-sans;
   padding: 0px;
   margin: 0px;
 }
 
+/*HEADER SCRIPTS*/
 header {
   background-color: #9c81c4;
   padding: 1em 0.2em;
@@ -31,10 +32,11 @@ header {
 
 header section#sub-title {
   font-size: 0.5em;
+  font-weight: bold;
   word-spacing: normal;
 }
 
-/*Navigation Bar Scripts*/
+/*NAVIGATION BAR SCRIPTS*/
 nav#main-nav-bar {
   display: none;
   border-style: none;
@@ -50,13 +52,30 @@ nav#main-nav-bar {
   background-color: #9d7ccc;
 }
 
+/*Commenting out the following code because it doesn't seem to do anything?/*
+/*
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
       background: #c9b2ea;
  }
+*/
+
+/*Don't forget that you must use li:hover when changing properties
+of navbar items, not a:hover.*/
+.navbar-default .navbar-nav li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 2s;
+  transition: background-color 0.3s;
+}
 
 nav#main-nav-bar a {
-  font-weight: bold;
   color: #383838;
+}
+
+/*FOOTER SCRIPTS*/
+footer {
+  display: none;
+  font-weight: bold;
+  text-align: center;
 }
